@@ -3,6 +3,8 @@ A generator that reads swagger / open api 3 json configs and generates typescrip
 
 Hint: implemented with specific use case in mind.
 
+[![npm version](https://badge.fury.io/js/%40progresso%2Fopenapi-typescript-client-api-generator.svg)](https://badge.fury.io/js/%40progresso%2Fopenapi-typescript-client-api-generator)
+
 ## Example
 
 Your open-api 3 json config file:
