@@ -18,17 +18,28 @@ import { {{name}} } from "./{{fileName}}";
  */
  {{/description}}
 export class {{name}}{{#supertype}} extends {{name}}{{/supertype}} {
+{{#properties}}
+    {{#description}}
+    /**
+     * {{.}}
+     */
+    {{/description}}
+    public {{name}}: {{type}}{{#typeIsArray}}[]{{/typeIsArray}};
+{{^isLast}}
+
+{{/isLast}}
+{{/properties}}
 
     /**
      * Creates a {{name}}.
      *
 {{#supertype}}
 {{#properties}}
-     * @param {{=<% %>=}}{<%type%>}<%={{ }}=%> {{name}} {{description}}
+     * @param {{=<% %>=}}{<%type%>}<%={{ }}=%> {{name}}{{#description}} {{.}}{{/description}}
 {{/properties}}
 {{/supertype}}
 {{#properties}}
-     * @param {{=<% %>=}}{<%type%>}<%={{ }}=%> {{name}} {{description}}
+     * @param {{=<% %>=}}{<%type%>}<%={{ }}=%> {{name}}{{#description}} {{.}}{{/description}}
 {{/properties}}
      */
     constructor({{#supertype}}{{#properties}}{{name}}: {{type}}{{#typeIsArray}}[]{{/typeIsArray}}, {{/properties}}{{/supertype}}{{#properties}}{{name}}: {{type}}{{#typeIsArray}}[]{{/typeIsArray}}{{^isLast}}, {{/isLast}}{{/properties}}) {
@@ -39,16 +50,4 @@ export class {{name}}{{#supertype}} extends {{name}}{{/supertype}} {
         this.{{name}} = {{name}};
 {{/properties}}
     }
-
-    {{#properties}}
-    {{#description}}
-    /**
-     * {{.}}
-     */
-    {{/description}}
-    public {{name}}: {{type}}{{#typeIsArray}}[]{{/typeIsArray}};
-{{^isLast}}
-
-{{/isLast}}
-    {{/properties}}
 }
