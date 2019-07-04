@@ -1,5 +1,5 @@
 {
-  "name": "@progresso-group/openapi-typescript-client-api-generator",
+  "name": "@progresso/openapi-typescript-client-api-generator",
   "description": "A generator that reads swagger / open api 3 json configs and generates typescript client services with axios",
   "version": "1.0.0",
   "main": "index.js",
