@@ -1,11 +1,17 @@
 {
-  "name": "openapi-typescript-client-api-generator",
+  "name": "@progresso-group/openapi-typescript-client-api-generator",
+  "description": "A generator that reads swagger / open api 3 json configs and generates typescript client services with axios",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "https://github.com/progresso-group/openapi-typescript-client-api-generator.git",
-  "author": "Michael Hilus <m.hilus@progresso-group.de>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/progresso-group/openapi-typescript-client-api-generator.git"
+  },
+  "keywords": ["typescript", "swagger", "open-api-3", "axios"],
+  "author": "Michael Hilus <m.hilus@progresso-group.de> (https://www.progresso-group.de)",
   "license": "MIT",
   "private": false,
+  "homepage": "https://github.com/progresso-group/openapi-typescript-client-api-generator",
   "bin": {
     "openapi-typescript-client-api-generator": "./bin/generator"
   },
