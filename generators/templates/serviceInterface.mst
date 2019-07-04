@@ -24,7 +24,7 @@ export interface I{{name}} {
      * @param {{=<% %>=}}{<%type%><%#isBody%>RequestBody<%/isBody%>}<%={{ }}=%> {{^required}}[{{/required}}{{name}}{{^required}}]{{/required}} {{{description}}}
 {{/parameters}}
      */
-    {{name}}({{#parameters}}{{name}}{{^required}}?{{/required}}: {{type}}{{#isBody}}RequestBody{{/isBody}}{{^isLastParam}}, {{/isLastParam}}{{/parameters}}): Promise<{{returnType}}>
+    {{name}}({{#parameters}}{{name}}{{^required}}?{{/required}}: {{type}}{{#isBody}}RequestBody{{/isBody}}{{^isLastParam}}, {{/isLastParam}}{{/parameters}}): Promise<{{returnType}}>;
 {{^isLast}}
 
 {{/isLast}}
