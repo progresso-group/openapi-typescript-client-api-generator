@@ -233,6 +233,7 @@ $ yarn generate -c /api/awesome-api.json -sb /client/services -s /client/api/ser
 
 ## Parameter documentation
 All parameters are required currently. All pathes are relative to the project root.
+
 | Parameter    | Description                                                                                               | Example                 |
 |--------------|-----------------------------------------------------------------------------------------------------------|-------------------------|
 | `-c <path>`  | The path to your json config file.                                                                        | `/api/awesome-api.json` |
